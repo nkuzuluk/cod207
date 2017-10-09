@@ -1,0 +1,65 @@
+void setup() {
+  // set Window size 
+  size(650, 700);
+}
+
+void draw() {
+  
+  background(#401C04);
+  //kedinin kulak ana
+  fill(#FFB731);
+  triangle(0,0,100,100,0,200);
+  
+  fill(#FFB731);
+  triangle(100,100,200,0,200,200);
+  
+  //yuz karesi
+  fill(#FAFF71);
+  quad(0,200,100,100,200,200,100,300);
+  
+  //govde
+  fill(#FFE731);
+  triangle(50,350,200,200,200,500);
+  
+  fill(#FFB731);
+  triangle(200,200,400,400,200,600);
+  
+  //ayak ve kuyruk
+  fill(#D36702);
+  triangle(400,400,100,700,400,700);
+  
+  fill(#932F00);
+  quad(475,600,400,700,550,700,625,600);
+  
+ //kedinin kulak delikleri
+ 
+ fill(#932F00);
+  triangle(25,175,75,125,25,75);
+  
+  fill(#932F00);
+  triangle(125,125,175,175,175,75);
+ 
+ //kedinin gozu
+
+ fill(#050500);
+ ellipse(75,190,20,40);
+ 
+ fill(#050500);
+ ellipse(125,190,20,40);
+ 
+ fill(#FFFFFF);
+ ellipse(75,190,10,25);
+ 
+ fill(#FFFFFF);
+ ellipse(125,190,10,25);
+ 
+  //burun
+ fill(#391700);
+ ellipse(100,250,20,10);
+ 
+  //text kısmı
+  fill(#F9FFBC);
+  text("Meow",mouseX, mouseY);
+  textSize(50);
+  
+}
