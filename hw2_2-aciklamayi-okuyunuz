@@ -1,0 +1,250 @@
+void setup() {
+  //set window size
+  size(500, 500);
+}
+
+boolean dugme=true;
+
+void draw() {
+
+  background(#FFEFDE);
+
+  //kafa ana prizma
+
+  fill(37, 180, 177);
+  strokeWeight(0);
+  rect(205, 50, 90, 70);
+
+  //yan antenler
+  fill(98, 98, 98);
+  rect(295, 67, 9, 36);
+  rect(197, 67, 9, 36); 
+
+  fill(125, 125, 125);
+  rect(189, 73, 8, 25);
+  rect(304, 73, 8, 25);
+
+  fill(160, 160, 160);
+  rect(312, 78, 8, 15);
+  rect(181, 78, 8, 15);
+
+  fill(131, 208, 245);
+  rect(320, 83, 28, 5);
+  rect(153, 83, 28, 5);
+
+  fill(255, 0, 0);
+  ellipse(150, 86, 11, 11);
+  fill(255, 0, 0);
+  ellipse(350, 86, 11, 11);
+
+  //tepe anten
+  fill(243, 153, 123);
+  rect(218, 42, 64, 8);
+
+  fill(131, 208, 245);
+  rect(248, 20, 4, 22);
+
+  fill(0, 255, 0);
+  ellipse(250, 15.5, 12, 11);
+
+  //gözler 1. yeşil 2. pembe
+
+  fill(58, 170, 53);
+  ellipse(218+13, 61+13, 26, 26);
+  fill(236, 100, 70);
+  ellipse(257+13, 61+13, 26, 26);
+
+  fill(255);
+  ellipse(226+4.5, 63+11.5, 9, 23);
+  ellipse(266+4.5, 63+11.5, 9, 23);
+
+  fill(0);
+  ellipse(222+8.5, 71+3, 17, 6);
+  ellipse(261+8.5, 71+3, 17, 6);
+
+  //ağız/sarı
+
+  fill(0);
+  rect(214, 95, 72, 19);
+
+  fill(255, 241, 95);
+  rect(217, 99, 65, 12);
+
+  //gövde ana
+  strokeWeight(0);
+  fill(37, 180, 177);
+  rect(201, 135, 98, 91);
+
+  //gövde panel sarı
+  fill(255, 241, 95);
+  rect(210, 142, 35, 48);
+  rect(256, 142, 35, 48);
+
+  //panel minik kareler
+  fill(0);
+  rect(211, 144, 9, 9);
+  rect(223, 144, 9, 9);
+  rect(235, 144, 9, 9);
+
+  rect(211, 179, 9, 9);
+  rect(223, 179, 9, 9);
+  rect(235, 179, 9, 9);
+
+  rect(257, 144, 9, 9);
+  rect(269, 144, 9, 9);
+  rect(281, 144, 9, 9);
+
+  rect(257, 179, 9, 9);
+  rect(269, 179, 9, 9);
+  rect(281, 179, 9, 9);
+
+  //panel çizgiler
+  //1 mavi
+  fill(0, 185, 238);
+  rect(211, 154, 33, 3);
+
+  fill(0, 185, 238);
+  rect(211, 154, 33, 3);
+
+  fill(0, 185, 238);
+  rect(211, 154, 33, 3);
+
+  fill(0, 55, 57);
+  rect(211, 174, 33, 3);
+
+  fill(0, 255, 255);
+  rect(211, 170, 33, 3);
+
+  //2 pembeler
+
+  fill(252, 203, 141);
+  rect(211, 158, 33, 3);
+
+  fill(243, 153, 123);
+  rect(211, 162, 33, 3);
+
+  fill(236, 100, 70);
+  rect(211, 166, 33, 3);
+
+//kırmızı kalp düğme
+
+//frameCount is a system variable, indicating the number of frames that has been rendered since the sketch started running 
+//frames.length is the number of elements in the array  called frames. 
+//% (Modulo) "Calculates the remainder when one number is divided by another." 
+
+  if(frameCount% 7==0) {
+    if(dugme)
+  fill(255,0,0);
+    else
+  fill(255, 241, 95);
+    dugme = !dugme;
+  }
+ ellipse(264+9, 156+9, 18, 18);
+
+  // gövde panel alt parça
+
+  fill(243, 153, 123);
+  rect(209, 198, 83, 21);
+
+  //gövde alt panel elipsler
+  fill(0, 255, 0);
+  ellipse(217+8, 200+8, 16, 16);
+
+  fill(0, 255, 0);
+  ellipse(242+8, 200+8, 16, 16);
+
+  fill(255, 0, 0);
+  ellipse(267+8, 200+8, 16, 16);
+
+  //boyun
+  fill(180);
+  rect(237, 120, 26, 15);
+
+  //kol yan pempe parçalar
+  fill(243, 153, 123);
+  rect(184, 141, 8, 25);
+
+  fill(236, 100, 70);
+  rect(192, 135, 9, 36);
+
+  fill(243, 153, 123);
+  rect(308, 141, 8, 25);
+
+  fill(236, 100, 70);
+  rect(299, 135, 9, 36);
+
+  //kollar ana mavi parçalar
+  noStroke();
+  fill(131, 208, 245);
+  rect(316, 145, 34, 15);
+
+  fill(131, 208, 245);
+  rect(334, 145, 16, 105);
+
+  fill(131, 208, 245);
+  rect(150, 146, 34, 15);
+
+  fill(131, 208, 245);
+  rect(150, 146, 16, 105);
+
+  //eller
+  fill(236, 100, 70);
+  rect(135, 251, 31, 11.99);
+
+  fill(236, 100, 70);
+  rect(135, 263, 7, 6);
+
+  fill(236, 100, 70);
+  rect(159, 262, 7, 13);
+
+  fill(236, 100, 70);
+  rect(334, 250, 31, 12);
+
+  fill(236, 100, 70);
+  rect(334, 262, 7, 12);
+
+  fill(236, 100, 70);
+  rect(358, 261, 7, 8);
+
+  //ayaklar ama rectangle
+
+  fill(131, 208, 245);
+  rect(181, 211, 20, 15);
+
+  fill(131, 208, 245);
+  rect(173, 211, 15, 243);
+
+  fill(131, 208, 245);
+  rect(299, 211, 20, 15);
+
+
+  fill(131, 208, 245);
+  rect(312, 211, 15, 243);
+
+  //eklem yeşiller
+  fill(58, 170, 53);
+  ellipse(144+14, 138+14, 28, 28);
+
+  fill(58, 170, 53);
+  ellipse(328+14, 138+14, 28, 28);
+
+  fill(58, 170, 53);
+  ellipse(166+14, 320+14, 28, 28);
+
+  fill(58, 170, 53);
+  ellipse(306+14, 320+14, 28, 28);
+
+  //ayaklar
+
+  fill(98, 98, 98);
+  rect(168.38, 442, 24.58, 13.12);
+  rect(307.03, 442, 24.58, 13.12); 
+
+  fill(125, 125, 125);
+  rect(160.19, 455.12, 40.97, 13.12);
+  rect(298.84, 455.12, 40.97, 13.12);
+
+  fill(160, 160, 160);
+  rect(152, 468.24, 59, 14.75);
+  rect(289, 468.24, 59, 14.75);
+}
