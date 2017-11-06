@@ -1,0 +1,31 @@
+float f;
+
+void setup() {
+
+  size(800, 800);
+  smooth();
+}
+
+void draw() {
+  noStroke();
+
+  for (int y = 0; y <= height; y = y + 40) {
+    for (int x = 0; x <= width; x += 80) {
+
+      //arkaplanın mouse hareketiyle ren değiştirmesi için
+      f = map(mouseX, 0, width, 0, 255);
+      fill(150, 255, f, 255);
+
+      for (int i = 0; i < 10; i = i +1) {
+
+        //mouse hareketiyle line weight değişir
+        float weight = dist(mouseX, mouseY, pmouseX, pmouseY);
+        stroke(0);
+        strokeWeight(weight);
+        line(mouseX, mouseY, pmouseX, pmouseY);
+ 
+        ellipse(x, y, 200, 240);
+      }
+    }
+  }
+}
